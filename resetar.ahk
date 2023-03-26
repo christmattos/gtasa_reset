@@ -58,7 +58,9 @@ f4::
     ;processes or your pc is slower than mine, it'll need more time in sleep, if your pc is faster than mine or you have less process open, it'll be more faster to load and less time to sleep)
     ;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     ControlSend,, {Enter Down}, ahk_exe gta_sa.exe
+    ControlSend,, {Enter Down}, ahk_exe gta-sa.exe
     ControlSend,, {Enter Up}, ahk_exe gta_sa.exe
+    ControlSend,, {Enter Up}, ahk_exe gta-sa.exe
     ;-----------------------------------------------------
 
     BlockInput off ;remove block from keystrockes, you're now free to press something again
