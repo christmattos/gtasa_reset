@@ -14,5 +14,5 @@ double click it
 move the mouse to original position  
 
 if your dxwind dont skip the rockstar spray cutscene and etc, it'll do this, if it skips just delete the lines before the blockinput off  
-wait (it may vary to from computer to computer, so test the script before, mine 1k ms works just fine  
+wait (it may vary to from computer to computer, so test the script before, mine 1k ms works just fine)  
 send enter down and up  
