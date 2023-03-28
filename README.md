@@ -1,6 +1,8 @@
-# gtasa_reset
+# gtasa_reset  
 
-I made this script for faster resets in speedrun  
+ATTENTION: THIS SCRIPT IS NOT ALLOWED IN OFFICIAL SPEEDRUNS, USE IF YOU WANNA PRACTICE  
+
+I made this script for faster resets in speedruns  
 
 This script do the following steps:  
 block the input  
