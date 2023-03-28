@@ -27,5 +27,5 @@ What do i need to do to use this script?
 2° - Extract it  
 3° - Edit the file "resetar.ahk" and put your "GTA SA User files" path. You can delete the FileDelete functions to do not delete any save at all or just the ones that you dont wanna. If your dxwind dont skip the rockstar spray cutscene and etc, dont edit anything, if it skips just delete the two lines before the blockinput off  
 4° - Run the script
-5° - Press F4 (or other any key, you can edit it) with the dxwind open
+5° - Press F4 (or other any key, you can edit it) with the dxwind open  
 6° - You're done!))
