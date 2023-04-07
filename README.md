@@ -6,6 +6,7 @@ I made this script for faster resets in speedruns
 
 This script do the following steps:  
 block the input  
+create and change a variable to true to check if you might be stucked
 close gta process  
 delete saves and replay  
 focus on dxwind  
@@ -14,7 +15,8 @@ get the current mouse position
 move the mouse to gta icon  
 double click it  
 move the mouse to original position  
-unblock the input  
+unblock the input 
+change the check variable to false
 
 if your dxwind dont skip the rockstar spray cutscene and etc, it'll do this, if it skips just delete the lines before the blockinput off  
 wait (it may vary to from computer to computer, so test the script before, mine 1k ms works just fine)  
@@ -29,3 +31,4 @@ What do i need to do to use this script?
 4° - Run the script
 5° - Press F4 (or other any key, you can edit it) with the dxwind open  
 6° - You're done!))
+

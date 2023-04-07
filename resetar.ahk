@@ -5,6 +5,8 @@
 #NoEnv
 #Persistent
 #SingleInstance, Force
+#UseHook
+#InstallKeybdHook
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
 SetControlDelay -1
@@ -17,10 +19,12 @@ if not A_IsAdmin{
 userfilespath := "C:\Users\User\Documents\GTA San Andreas User Files" ;gta user files path, dunno if there's a relative path in ahk
 icon1path := "cj1.png" ;first icon path or just put name if its in the same folder
 icon2path := "cj2.png" ; second icon pathor just put name if its in the same folder
-return
+
+SetTimer, checker, 1000 ;check if the blockinput didn't work properly. it'll close if dont.
 
 f4::
     BlockInput on ;block keystrokes that you might press
+    inputblocked := True
     ;close gta_sa.exe or gta-sa.exe
     Process, Close, gta_sa.exe
     Process, Close, gta-sa.exe
@@ -51,6 +55,9 @@ f4::
     Click, 2 ;double click it
     MouseMove, MX, MY, 0 ;move the mouse back to the original mouse position
 
+    WinActivate, ahk_exe gta_sa.exe ;it'll focus the gta
+    WinActivate, ahk_exe gta-sa.exe ;it'll focus the gta²
+
     ;----------if your gta dont insta skip to menu, use this, it'll wait and press enter, if dont just delete this part before the blockinput---------------
     Sleep, 1000 ;it'll wait for gta skippable part to enter, it does not work with winactivate, 
     ;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -64,4 +71,11 @@ f4::
     ;-----------------------------------------------------
 
     BlockInput off ;remove block from keystrockes, you're now free to press something again
+    inputblocked := False
+return
+
+checker:
+    if (A_TimeIdle >= 5000) && (inputblocked = True){
+        Reload
+    }
 return
